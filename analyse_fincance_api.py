@@ -7,8 +7,11 @@ import pandas as pd
 
 from Moduls.print_plot_modul import print_plot
 
+# request in the Console the Index
+STOCK_NAME = input("Aktien Kürzel ? ")
 # set selected Stock
-STOCK_NAME = "SPY"
+if len(STOCK_NAME)==0:
+    STOCK_NAME = "SPY"
 
 # set Start and End Date for selected stocks
 START_DATE = "2012-02-01"
